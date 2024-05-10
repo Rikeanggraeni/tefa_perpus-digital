@@ -24,11 +24,15 @@ const route = useRoute();
 const buku = ref([]);
 
 const getBukuByld = async () => {
-  const { data, error } = await supabase.from("buku").select(", kategori()").eq("id", route.params.id);
-  if (data) buku.value = data[0];
+  const { data, error } = await supabase
+    .from("buku")
+    .select(`*, kategori(*)`)
+    .eq("id", route.params.id)
+    .single()
+  if (data) buku.value = data;
 };
 
 onMounted(() => {
-  getBookById();
+  getBukuByld();
 });
 </script>

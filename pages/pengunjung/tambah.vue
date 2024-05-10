@@ -14,7 +14,7 @@
               <option v-for="(member, i) in members" :key="i" :value="member.id">{{ member.nama }}</option>
             </select>
           </div>
-          <div class="mb-3" v-if="form.keanggotaan == '5'">
+          <div class="mb-3" v-if="form.keanggotaan == 5">
             <div class="row">
               <div class="col-lg-4">
                 <select v-model="form.tingkat" class="form-control form-control-lg form-select rounded-5 mb-2">
@@ -35,7 +35,7 @@
                 </select>
               </div>
               <div class="col-lg-4">
-                <select class="form-control form-control-lg form-select rounded-5 mb-2">
+                <select v-model="form.kelas" class="form-control form-control-lg form-select rounded-5 mb-2">
                   <option value="">KELAS</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -47,18 +47,14 @@
           </div>
           <div class="mb-3">
             <select v-model="form.keperluan" class="form-control form-control-lg form-select rounded-5">
-              <option value="">KEPERLUAN</option>
-              <option value="baca buku">baca buku</option>
-              <option value="pinjam buku">pinjam buku</option>
-              <option value="kembalikan buku">kembalikan buku</option>
+              <option value="" disabled>KEPERLUAN</option>
               <option v-for="(item, i) in objectives" :key="i" :value="item.id">{{ item.nama }}</option>
             </select>
           </div>
-          <nuxt-link to="../pengunjung"><button type="submit"
-              class="btn btn-dark btn-lg rounded-5 px-5 bg-primary">KIRIM</button></nuxt-link>
-          <nuxt-link to="../"><button type="submit"
-              class="btn btn-light btn-lg  btn-dark rounded-5 px-5 bg-primary text-white"
-              style="float: right;">KEMBALI</button></nuxt-link>
+          <button type="submit" class="btn btn-dark btn-lg rounded-5 px-5 bg-primary">KIRIM</button>
+          <nuxt-link to="../" class="btn btn-light btn-lg  btn-dark rounded-5 px-5 bg-primary text-white float-end">
+            KEMBALI
+          </nuxt-link>
         </form>
       </div>
     </div>
@@ -84,19 +80,23 @@ const form = ref({
 
 const kirimData = async () => {
   console.log(form.value)
-  const { error } = await supabase.from('pengunjung').insert([from.value]);
+  const { error } = await supabase.from('pengunjung').insert([form.value]);
   if (!error) navigateTo('/pengunjung');
 };
 
 
 const getkeanggotaan = async () => {
-  const { data, error } = await supabase.from('keanggotaan').select('*');
+  const { data, error } = await supabase
+    .from('keanggotaan')
+    .select();
   if (data) members.value = data;
 };
 
 const getkeperluan = async () => {
-  const { data, error } = await supabase.from('keperluaan').select('*');
-  if (data) members.value = data;
+  const { data, error } = await supabase
+    .from('keperluan')
+    .select();
+  if (data) objectives.value = data;
 };
 
 onMounted(() => {
