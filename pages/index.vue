@@ -29,14 +29,16 @@
         <div class="col-lg-5">
           <div class="card bg-spengunjung rounded-5" style="height: 350px;">
             <div class="card-body">
-              <div class="row">
-                <div class="col p-5">
-                  <h1 style="font-size: 200px;">0</h1>
+              <nuxt-link to="/pengunjung">
+                <div class="row">
+                  <div class="col p-5">
+                    <h1 style="font-size: 120px;">{{ jumlahp }}</h1>
+                  </div>
+                  <div class="col mt-5 p-5" style="margin-left :-200px">
+                    <h2>pengunjung</h2>
+                  </div>
                 </div>
-                <div class="col mt-5 p-5" style="margin-left :-200px">
-                  <h2>pengunjung</h2>
-                </div>
-              </div>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -44,14 +46,16 @@
         <div class="col-lg-5">
           <div class="card bg-sbuku rounded-5 ms-4" style="height: 350px;">
             <div class="card-body">
-              <div class="row">
-                <div class="col p-5">
-                  <h1 style="font-size: 200px;">80</h1>
+              <nuxt-link to="./buku">
+                <div class="row">
+                  <div class="col p-5">
+                    <h1 style="font-size: 200px; margin-right: 200px">{{ jumlahb }}</h1>
+                  </div>
+                  <div class="col mt-5 p-5">
+                    <h2>Buku</h2>
+                  </div>
                 </div>
-                <div class="col mt-5 p-5">
-                  <h2>Buku</h2>
-                </div>
-              </div>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -60,6 +64,32 @@
     <chart />
   </div>
 </template>
+
+<script setup>
+const supabase = useSupabaseClient();
+const jumlahp = ref(0);
+const jumlahb = ref(0);
+
+async function ambiljumlahp() {
+  const { data, error, count } = await supabase
+    .from("pengunjung")
+    .select("*", { count: "exact" });
+  if (count) jumlahp.value = count;
+};
+
+async function ambiljumlahb() {
+  const { data, error, count } = await supabase
+    .from("buku")
+    .select("*", { count: "exact" });
+  if (count) jumlahb.value = count;
+};
+
+onMounted(() => {
+  ambiljumlahp();
+  ambiljumlahb();
+});
+
+</script>
 
 <style scoped>
 .card {
