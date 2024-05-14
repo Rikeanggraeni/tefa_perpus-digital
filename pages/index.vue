@@ -98,6 +98,8 @@ onMounted(() => {
 }
 
 .card.bg-pengunjung {
+  margin-right: 13%;
+  margin-left: 13%;
   background-image: url("../assets/img/bg-home-kunjungan.jpeg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -107,6 +109,8 @@ onMounted(() => {
 }
 
 .card.bg-buku {
+  margin-right: 13%;
+  margin-left: 13%;
   background: url('../assets/img/bg-home-cari-buku.jpg')no-repeat center center;
   background-size: cover;
   color: black;
@@ -114,6 +118,9 @@ onMounted(() => {
 }
 
 .card.bg-spengunjung {
+  margin-right: 13%;
+  margin-left: 13%;
+  margin-top: 2%;
   background-color: #E9E236;
   background-repeat: no-repeat;
   background-position: center center;
@@ -123,6 +130,9 @@ onMounted(() => {
 }
 
 .card.bg-sbuku {
+  margin-right: 13%;
+  margin-left: 13%;
+  margin-top: 2%;
   background-color: #69B4AF;
   background-repeat: no-repeat;
   background-position: center center;
