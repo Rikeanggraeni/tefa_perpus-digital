@@ -3,7 +3,7 @@
     <div class="row my-5 justify-content-around mt-5">
       <div class="col-lg-5">
         <nuxt-link to="/pengunjung/tambah">
-          <div class="card bg-pengunjung rounded-5" style="height: 350px;">
+          <div class="card bg-pengunjung rounded-5">
             <div class="card-body">
               <h2>pengunjung</h2>
             </div>
@@ -12,8 +12,8 @@
       </div>
 
       <div class="col-lg-5 ">
-        <nuxt-link to="/buku">
-          <div class="card bg-buku rounded-5" style="height: 350px;">
+        <nuxt-link to="../buku">
+          <div class="card bg-buku rounded-5">
             <div class="card-body">
               <h2>Cari Buku</h2>
             </div>
@@ -25,9 +25,9 @@
         <h2 class=" ">STATISTIK</h2>
       </div>
 
-      <div class="row my-5 justify-content-around" style="margin-right: 20px">
+      <div class="row my-5 justify-content-around">
         <div class="col-lg-5">
-          <div class="card bg-spengunjung rounded-5" style="height: 350px;">
+          <div class="card bg-spengunjung rounded-5">
             <div class="card-body">
               <nuxt-link to="/pengunjung">
                 <div class="row">
@@ -44,15 +44,15 @@
         </div>
 
         <div class="col-lg-5">
-          <div class="card bg-sbuku rounded-5 ms-4" style="height: 350px;">
+          <div class="card bg-sbuku rounded-5">
             <div class="card-body">
               <nuxt-link to="./buku">
                 <div class="row">
                   <div class="col p-5">
-                    <h1 style="font-size: 200px; margin-right: 200px">{{ jumlahb }}</h1>
+                    <h1 style="font-size: 120px; margin-right: 200px">{{ jumlahb }}</h1>
                   </div>
                   <div class="col mt-5 p-5">
-                    <h2>Buku</h2>
+                    <h2 style="font-family: margin-left -20px">Buku</h2>
                   </div>
                 </div>
               </nuxt-link>
@@ -93,7 +93,7 @@ onMounted(() => {
 
 <style scoped>
 .card {
-  height: 250px;
+  height: 300px;
   box-shadow: 1px 1px 10px #424242;
 }
 
