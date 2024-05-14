@@ -42,6 +42,11 @@
 </template>
 
 <script setup>
+useHead({
+  title: 'aplikasi perpus digital',
+  meta: [{ name: 'description', content: ' selamat datang ' }]
+})
+
 import Id from '../buku/[id].vue';
 
 const supabase = useSupabaseClient();
