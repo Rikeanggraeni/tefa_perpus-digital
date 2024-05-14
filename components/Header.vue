@@ -3,10 +3,10 @@
     <div class="col-lg-1">
       <img src="~/assets/img/LOGO-SMK4 .png/" alt="logo SMK4">
     </div>
-    <div class="col-lg-10 ms-5">
-      <h1>Perpus Digital</h1>
-      <div>SMKN4 Tasikmalaya</div>
+    <div class="col-lg-11">
+      <h1 style="font-size: 25px; margin-top: 20px;">PERPUS DIGITAL</h1>
       <address>
+        SMKN 4 Tasikmalaya
         Jl.Depok, Sukamenak, Purbaratu
       </address>
     </div>
