@@ -120,7 +120,6 @@ onMounted(() => {
 .card.bg-spengunjung {
   margin-right: 5%;
   margin-left: 5%;
-  margin-top: 2%;
   background-color: #E9E236;
   background-repeat: no-repeat;
   background-position: center center;
@@ -132,7 +131,6 @@ onMounted(() => {
 .card.bg-sbuku {
   margin-right: 5%;
   margin-left: 5%;
-  margin-top: 2%;
   background-color: #69B4AF;
   background-repeat: no-repeat;
   background-position: center center;
