@@ -21,7 +21,7 @@
         </nuxt-link>
       </div>
 
-      <div class="mt-5" style="margin-left : 150px">
+      <div class="mt-5" style="margin-left : 150px;">
         <h2 class=" ">STATISTIK</h2>
       </div>
 
@@ -98,6 +98,8 @@ onMounted(() => {
 }
 
 .card.bg-pengunjung {
+  margin-right: 5%;
+  margin-left: 5%;
   background-image: url("../assets/img/bg-home-kunjungan.jpeg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -107,6 +109,8 @@ onMounted(() => {
 }
 
 .card.bg-buku {
+  margin-right: 5%;
+  margin-left: 5%;
   background: url('../assets/img/bg-home-cari-buku.jpg')no-repeat center center;
   background-size: cover;
   color: black;
@@ -114,6 +118,8 @@ onMounted(() => {
 }
 
 .card.bg-spengunjung {
+  margin-right: 5%;
+  margin-left: 5%;
   background-color: #E9E236;
   background-repeat: no-repeat;
   background-position: center center;
