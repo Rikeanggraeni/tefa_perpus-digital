@@ -8,6 +8,7 @@
       <div class="col-md-4">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Penulis: {{ buku.penulis }}</li>
+          <li class="list-group-item">Penerbit: {{ buku.penernit }}</li>
           <li class="list-group-item">Tahun Terbit: {{ buku.tahun_terbit }}</li>
           <li class="list-group-item">deskripsi : {{ buku.deskripsi }}</li>
         </ul>
