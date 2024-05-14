@@ -3,7 +3,7 @@
     <div class="row my-5 justify-content-around mt-5">
       <div class="col-lg-5">
         <nuxt-link to="/pengunjung/tambah">
-          <div class="card bg-pengunjung rounded-5">
+          <div class="card bg-pengunjung rounded-5" style="height: 350px;">
             <div class="card-body">
               <h2>pengunjung</h2>
             </div>
@@ -12,8 +12,8 @@
       </div>
 
       <div class="col-lg-5 ">
-        <nuxt-link to="../buku">
-          <div class="card bg-buku rounded-5">
+        <nuxt-link to="/buku">
+          <div class="card bg-buku rounded-5" style="height: 350px;">
             <div class="card-body">
               <h2>Cari Buku</h2>
             </div>
@@ -21,13 +21,13 @@
         </nuxt-link>
       </div>
 
-      <div class="mt-5" style="margin-left : 200px">
+      <div class="mt-5" style="margin-left : 150px">
         <h2 class=" ">STATISTIK</h2>
       </div>
 
-      <div class="row my-5 justify-content-around">
+      <div class="row my-5 justify-content-around" style="margin-right: 20px">
         <div class="col-lg-5">
-          <div class="card bg-spengunjung rounded-5">
+          <div class="card bg-spengunjung rounded-5" style="height: 350px;">
             <div class="card-body">
               <nuxt-link to="/pengunjung">
                 <div class="row">
@@ -44,15 +44,15 @@
         </div>
 
         <div class="col-lg-5">
-          <div class="card bg-sbuku rounded-5">
+          <div class="card bg-sbuku rounded-5 ms-4" style="height: 350px;">
             <div class="card-body">
               <nuxt-link to="./buku">
                 <div class="row">
                   <div class="col p-5">
-                    <h1 style="font-size: 120px; margin-right: 200px">{{ jumlahb }}</h1>
+                    <h1 style="font-size: 200px; margin-right: 200px">{{ jumlahb }}</h1>
                   </div>
                   <div class="col mt-5 p-5">
-                    <h2 style="font-family: margin-left -20px">Buku</h2>
+                    <h2>Buku</h2>
                   </div>
                 </div>
               </nuxt-link>
@@ -93,13 +93,11 @@ onMounted(() => {
 
 <style scoped>
 .card {
-  height: 300px;
+  height: 250px;
   box-shadow: 1px 1px 10px #424242;
 }
 
 .card.bg-pengunjung {
-  margin-right: 13%;
-  margin-left: 13%;
   background-image: url("../assets/img/bg-home-kunjungan.jpeg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -109,8 +107,6 @@ onMounted(() => {
 }
 
 .card.bg-buku {
-  margin-right: 13%;
-  margin-left: 13%;
   background: url('../assets/img/bg-home-cari-buku.jpg')no-repeat center center;
   background-size: cover;
   color: black;
@@ -118,9 +114,6 @@ onMounted(() => {
 }
 
 .card.bg-spengunjung {
-  margin-right: 13%;
-  margin-left: 13%;
-  margin-top: 2%;
   background-color: #E9E236;
   background-repeat: no-repeat;
   background-position: center center;
@@ -130,9 +123,6 @@ onMounted(() => {
 }
 
 .card.bg-sbuku {
-  margin-right: 13%;
-  margin-left: 13%;
-  margin-top: 2%;
   background-color: #69B4AF;
   background-repeat: no-repeat;
   background-position: center center;
