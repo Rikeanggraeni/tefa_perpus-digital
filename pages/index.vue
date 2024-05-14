@@ -3,7 +3,7 @@
     <div class="row my-5 justify-content-around mt-5">
       <div class="col-lg-5">
         <nuxt-link to="/pengunjung/tambah">
-          <div class="card bg-pengunjung rounded-5" style="height: 350px;">
+          <div class="card bg-pengunjung rounded-3" style="height: 350px;">
             <div class="card-body">
               <h2>pengunjung</h2>
             </div>
