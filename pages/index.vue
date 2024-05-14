@@ -129,6 +129,8 @@ onMounted(() => {
 }
 
 .card.bg-sbuku {
+  margin-right: 5%;
+  margin-left: 5%;
   background-color: #69B4AF;
   background-repeat: no-repeat;
   background-position: center center;
