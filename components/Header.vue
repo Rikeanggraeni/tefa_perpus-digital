@@ -4,7 +4,7 @@
       <img src="~/assets/img/LOGO-SMK4 .png/" alt="logo SMK4">
     </div>
     <div class="col-lg-11">
-      <h1 style="font-size: 30px; margin-top: 20px;">PERPUS DIGITAL</h1>
+      <h1 style="font-size: 25px; margin-top: 20px;">PERPUS DIGITAL</h1>
       <address>
         SMKN 4 Tasikmalaya
         Jl.Depok, Sukamenak, Purbaratu
@@ -15,7 +15,7 @@
 
 <style scoped>
 img {
-  width: 113px;
+  width: 100px;
   height: 130px;
 }
 
