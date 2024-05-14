@@ -20,6 +20,9 @@
 </template>
 
 <script setup>
+useHead({
+  title: "detail buku", meta: [{ name: 'description', content: "detail buku" }]
+})
 const supabase = useSupabaseClient();
 const route = useRoute();
 const buku = ref([]);

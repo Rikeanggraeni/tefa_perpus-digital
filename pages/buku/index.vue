@@ -29,6 +29,10 @@
 </template>
 
 <script setup>
+useHead({
+  title: "buku", meta: [{ name: 'description', content: "semua buku di perpustakaan SMKN 4 TASIKMALAYA" }]
+})
+
 const keyword = ref("");
 const supabase = useSupabaseClient();
 

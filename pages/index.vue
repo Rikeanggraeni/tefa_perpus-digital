@@ -66,6 +66,10 @@
 </template>
 
 <script setup>
+useHead({
+  title: "perpus digital rike", meta: [{ name: 'description', content: "aplikasi kunjungan dan pencarian buku perpus SMKN 4 TASIKMALAYA" }]
+})
+
 const supabase = useSupabaseClient();
 const jumlahp = ref(0);
 const jumlahb = ref(0);

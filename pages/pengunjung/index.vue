@@ -42,10 +42,7 @@
 </template>
 
 <script setup>
-useHead({
-  title: 'aplikasi perpus digital',
-  meta: [{ name: 'description', content: ' selamat datang ' }]
-})
+useHead({ title: "pengunjung perpus" });
 
 import Id from '../buku/[id].vue';
 
