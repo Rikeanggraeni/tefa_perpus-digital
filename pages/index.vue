@@ -32,7 +32,7 @@
               <nuxt-link to="/pengunjung">
                 <div class="row">
                   <div class="col p-5">
-                    <h1 style="font-size: 140px; margin-right: 100px">{{ jumlahp }}</h1>
+                    <h1 style="font-size: 130px; margin-right: 100px">{{ jumlahp }}</h1>
                   </div>
                   <div class="col mt-5 p-5" style="margin-left :-200px">
                     <h2>pengunjung</h2>
@@ -49,7 +49,7 @@
               <nuxt-link to="./buku">
                 <div class="row">
                   <div class="col p-5">
-                    <h1 style="font-size: 140px; margin-right: 100px">{{ jumlahb }}</h1>
+                    <h1 style="font-size: 120px; margin-right: 100px">{{ jumlahb }}</h1>
                   </div>
                   <div class="col mt-5 p-5">
                     <h2>Buku</h2>
@@ -124,6 +124,7 @@ onMounted(() => {
 .card.bg-spengunjung {
   margin-right: 5%;
   margin-left: 5%;
+  margin-top: 2%;
   background-color: #E9E236;
   background-repeat: no-repeat;
   background-position: center center;
@@ -135,6 +136,7 @@ onMounted(() => {
 .card.bg-sbuku {
   margin-right: 5%;
   margin-left: 5%;
+  margin-top: 2%;
   background-color: #77f6aa;
   background-repeat: no-repeat;
   background-position: center center;
