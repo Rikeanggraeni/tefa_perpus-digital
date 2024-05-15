@@ -11,6 +11,10 @@
           <li class="list-group-item">Penerbit: {{ buku.penerbit }}</li>
           <li class="list-group-item">Tahun Terbit: {{ buku.tahun_terbit }}</li>
           <li class="list-group-item">deskripsi : {{ buku.deskripsi }}</li>
+          <li class="list-group-item">
+            <span v-if="buku.kategori">kategori : {{ buku.kategori.nama }}</span>
+            <span v-else>loading...</span>
+          </li>
         </ul>
       </div>
       <nuxt-link to="../buku"><button type="submit" class="btn btn-lg btn-dark rounded-5 px-5 bg-primary text-white"
