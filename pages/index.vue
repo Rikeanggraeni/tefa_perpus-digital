@@ -44,7 +44,7 @@
         </div>
 
         <div class="col-lg-5">
-          <div class="card bg-buku rounded-5" style="height: 350px;">
+          <div class="card bg-sbuku rounded-5" style="height: 350px;">
             <div class="card-body">
               <nuxt-link to="./buku">
                 <div class="row">
@@ -135,7 +135,7 @@ onMounted(() => {
 .card.bg-sbuku {
   margin-right: 5%;
   margin-left: 5%;
-  background-color: #69B4AF;
+  background-color: #77f6aa;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
