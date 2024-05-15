@@ -13,16 +13,16 @@
 
 <style scoped>
 img {
-  width: 150px;
-  height: 150px;
+  width: 210px;
+  height: 210px;
 }
 
-h1 {
+.h1 {
   margin-top: 10px;
   margin-left: 5px;
 }
 
-address {
+.address {
   margin-left: 5px;
 }
 </style>
