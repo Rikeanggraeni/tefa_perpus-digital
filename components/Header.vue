@@ -13,8 +13,8 @@
 
 <style scoped>
 img {
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 200px;
 }
 
 .h1 {
@@ -22,7 +22,7 @@ img {
   margin-left: 5px;
 }
 
-.address {
+address {
   margin-left: 5px;
 }
 </style>
